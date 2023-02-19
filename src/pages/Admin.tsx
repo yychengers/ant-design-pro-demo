@@ -3,6 +3,9 @@ import { PageContainer } from '@ant-design/pro-components';
 import { useIntl } from '@umijs/max';
 import { Alert, Card, Typography } from 'antd';
 import React from 'react';
+import JssButton from '../components/JssButton';
+import JssButtonDynamic from '../components/JssButton/dynamicValues';
+import JSSButtonPrefix from '../components/JssButton/prefixClassName';
 
 const Admin: React.FC = () => {
   const intl = useIntl();
@@ -30,7 +33,11 @@ const Admin: React.FC = () => {
         <Typography.Title level={2} style={{ textAlign: 'center' }}>
           <SmileTwoTone /> Ant Design Pro <HeartTwoTone twoToneColor="#eb2f96" /> You
         </Typography.Title>
-        <div>111</div>
+        <div>
+          {/* <JssButton>submit and some txt...</JssButton> */}
+          {/* <JssButtonDynamic fontStyle="italic">submit</JssButtonDynamic> */}
+          <JSSButtonPrefix fontStyle="italic">submit</JSSButtonPrefix>
+        </div>
       </Card>
       <p style={{ textAlign: 'center', marginTop: 24 }}>
         Want to add more pages? Please refer to{' '}
