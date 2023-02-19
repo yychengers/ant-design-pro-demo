@@ -7,6 +7,10 @@ import JssButton from '../components/JssButton';
 import JssButtonDynamic from '../components/JssButton/dynamicValues';
 import JSSButtonPrefix from '../components/JssButton/prefixClassName';
 
+import StyledComponent from '../components/StyledComponent';
+import IndexOnProps from '../components/StyledComponent/indexOnProps';
+import ExtendingStyled from '../components/StyledComponent/extendingStyled';
+
 const Admin: React.FC = () => {
   const intl = useIntl();
   return (
@@ -36,7 +40,11 @@ const Admin: React.FC = () => {
         <div>
           {/* <JssButton>submit and some txt...</JssButton> */}
           {/* <JssButtonDynamic fontStyle="italic">submit</JssButtonDynamic> */}
-          <JSSButtonPrefix fontStyle="italic">submit</JSSButtonPrefix>
+          {/* <JSSButtonPrefix fontStyle="italic">submit</JSSButtonPrefix> */}
+
+          {/* <StyledComponent /> */}
+          {/* <IndexOnProps /> */}
+          <ExtendingStyled />
         </div>
       </Card>
       <p style={{ textAlign: 'center', marginTop: 24 }}>
