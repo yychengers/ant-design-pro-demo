@@ -10,6 +10,11 @@ import JSSButtonPrefix from '../components/JssButton/prefixClassName';
 import StyledComponent from '../components/StyledComponent';
 import IndexOnProps from '../components/StyledComponent/indexOnProps';
 import ExtendingStyled from '../components/StyledComponent/extendingStyled';
+import StyleComponents from '../components/StyledComponent/styleComponents';
+import PassProps from '../components/StyledComponent/passProps';
+import SeudoElements from '../components/StyledComponent/seudoelements';
+import OverrideAttrs from '../components/StyledComponent/overrideAttrs';
+import Animate from '../components/StyledComponent/animate';
 
 const Admin: React.FC = () => {
   const intl = useIntl();
@@ -42,9 +47,14 @@ const Admin: React.FC = () => {
           {/* <JssButtonDynamic fontStyle="italic">submit</JssButtonDynamic> */}
           {/* <JSSButtonPrefix fontStyle="italic">submit</JSSButtonPrefix> */}
 
-          {/* <StyledComponent /> */}
+          <StyledComponent />
           {/* <IndexOnProps /> */}
-          <ExtendingStyled />
+          {/* <ExtendingStyled /> */}
+          {/* <StyleComponents /> */}
+          {/* <PassProps /> */}
+          {/* <SeudoElements /> */}
+          {/* <OverrideAttrs /> */}
+          {/* <Animate /> */}
         </div>
       </Card>
       <p style={{ textAlign: 'center', marginTop: 24 }}>
